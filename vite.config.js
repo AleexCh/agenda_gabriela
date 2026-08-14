@@ -17,7 +17,7 @@ export default defineConfig({
         theme_color: '#F5F3FF',
         background_color: '#F5F3FF',
         display: 'standalone',
-        orientation: 'portrait',
+        orientation: 'any',
         icons: []
       },
       workbox: {
