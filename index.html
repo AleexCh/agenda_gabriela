@@ -2,9 +2,23 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Prevents unwanted zooming, handles notches & safe areas on iPad/Android -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
     <title>Gabriela Nail Studio - Agenda 2026</title>
+
+    <!-- Theme Color for Android status bar (matches your vite config #F5F3FF) -->
+    <meta name="theme-color" content="#F5F3FF" />
+
+    <!-- iOS / iPadOS Native App Optimizations -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Gabriela Agenda" />
+
+    <!-- App Icon (SVG Data URL fallback) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='128' fill='%23FAF7F5'/><rect x='16' y='16' width='480' height='480' rx='112' fill='none' stroke='%23E91E63' stroke-width='8' opacity='0.2'/><path d='M216 140h80v60h-80z' fill='%23333333' rx='8'/><path d='M236 110h40v30h-40z' fill='%23666666' rx='4'/><path d='M186 210h140c11 0 20 9 20 20v130c0 44-36 80-80 80h-20c-44 0-80-36-80-80V230c0-11 9-20 20-20z' fill='%23E91E63'/><path d='M206 210h100c11 0 20 9 20 20v60c0 44-36 80-80 80-22 0-40-9-54-24 9-26 14-88 14-136z' fill='%23D81B60' opacity='0.5'/><path d='M210 240c15 30 15 90 0 130' stroke='%23FFFFFF' stroke-width='12' stroke-linecap='round' fill='none' opacity='0.6'/><circle cx='370' cy='150' r='18' fill='%23F48FB1' opacity='0.8'/><circle cx='350' cy='135' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='390' cy='135' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='355' cy='165' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='385' cy='165' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='370' cy='150' r='8' fill='%23FFF176'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='128' fill='%23FAF7F5'/><rect x='16' y='16' width='480' height='480' rx='112' fill='none' stroke='%23E91E63' stroke-width='8' opacity='0.2'/><path d='M216 140h80v60h-80z' fill='%23333333' rx='8'/><path d='M236 110h40v30h-40z' fill='%23666666' rx='4'/><path d='M186 210h140c11 0 20 9 20 20v130c0 44-36 80-80 80h-20c-44 0-80-36-80-80V230c0-11 9-20 20-20z' fill='%23E91E63'/><path d='M206 210h100c11 0 20 9 20 20v60c0 44-36 80-80 80-22 0-40-9-54-24 9-26 14-88 14-136z' fill='%23D81B60' opacity='0.5'/><path d='M210 240c15 30 15 90 0 130' stroke='%23FFFFFF' stroke-width='12' stroke-linecap='round' fill='none' opacity='0.6'/><circle cx='370' cy='150' r='18' fill='%23F48FB1' opacity='0.8'/><circle cx='350' cy='135' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='390' cy='135' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='355' cy='165' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='385' cy='165' r='12' fill='%23F48FB1' opacity='0.7'/><circle cx='370' cy='150' r='8' fill='%23FFF176'/></svg>">
   </head>
   <body>
     <div id="root"></div>

@@ -7,7 +7,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      // Left empty so it doesn't fail looking for public/ files
+      includeAssets: [],
       manifest: {
         name: 'Gabriela Nail Studio',
         short_name: 'Gabriela',
@@ -16,18 +17,7 @@ export default defineConfig({
         background_color: '#F5F3FF',
         display: 'standalone',
         orientation: 'portrait',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
+        icons: [] // Relying on the index.html inline SVG icon
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}']
