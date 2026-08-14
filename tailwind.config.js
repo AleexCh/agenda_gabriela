@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         planner: {
-          bg: '#F5F3FF',        // Light lavender background
+          bg: '#F5F3FF',       // Light lavender background
           card: '#ffffff',      // Pure white container cards
           accent: '#C084FC',    // Purple accent
           active: '#A78BFA',    // Active purple state
@@ -20,8 +20,9 @@ export default {
         }
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        script: ['"Alex Brush"', 'cursive'],
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
       }
     },
   },

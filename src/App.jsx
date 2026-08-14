@@ -35,6 +35,8 @@ export default function App() {
   const [activeNav, setActiveNav] = useState('calendar');
   const datePickerRef = useRef(null);
 
+  const currentYear = new Date().getFullYear();
+
   // Return to cover page (index)
   const handleGoToCover = () => {
     setShowCover(true);
@@ -134,7 +136,7 @@ export default function App() {
     day: 'numeric', 
     month: 'long', 
     year: 'numeric' 
-  }).toUpperCase();
+  });
 
   const currentMonth = selectedDate.getMonth();
 
@@ -148,8 +150,8 @@ export default function App() {
           <div className="relative cursor-pointer group" onClick={() => setShowCover(false)}>
             <div className="absolute -top-8 -left-4 md:-left-8 text-4xl md:text-6xl opacity-20">🌸</div>
             <div className="absolute -top-4 -right-4 md:-right-8 text-3xl md:text-5xl opacity-20">🌷</div>
-            <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl font-bold text-planner-text tracking-wider relative z-10 break-words transition group-hover:scale-105">
-              GABRIELA
+            <h1 className="font-script text-6xl sm:text-8xl md:text-9xl font-normal text-planner-text tracking-wider relative z-10 break-words transition group-hover:scale-105">
+              Gabriela
             </h1>
             <div className="absolute -bottom-6 -left-8 text-3xl md:text-5xl opacity-20">🌺</div>
             <div className="absolute -bottom-4 -right-8 text-4xl md:text-6xl opacity-20">🪻</div>
@@ -158,7 +160,7 @@ export default function App() {
             Nail Studio
           </p>
           <p className="text-planner-muted text-base md:text-lg">
-            Agenda Digital
+            Agenda Digital {currentYear}
           </p>
           <button
             onClick={() => setShowCover(false)}
@@ -186,10 +188,10 @@ export default function App() {
                 className="text-left group focus:outline-none transition-transform hover:opacity-80 active:scale-95"
                 title="Volver a la Portada"
               >
-                <h1 className="font-serif text-2xl md:text-3xl font-semibold text-planner-text tracking-wide mb-0.5 group-hover:text-planner-accent transition-colors">
-                  GABRIELA
+                <h1 className="font-script text-4xl md:text-5xl font-normal text-planner-text tracking-wide mb-0.5 group-hover:text-planner-accent transition-colors">
+                  Gabriela
                 </h1>
-                <p className="text-[10px] md:text-xs text-planner-muted uppercase tracking-widest">AGENDA</p>
+                <p className="text-[10px] md:text-xs text-planner-muted uppercase tracking-widest mt-1">AGENDA {currentYear}</p>
               </button>
 
               <div className="text-2xl min-[700px]:hidden cursor-pointer" onClick={handleGoToCover}>🌸</div>
@@ -230,7 +232,7 @@ export default function App() {
           <div>
             {/* HEADER & DATE SELECTOR */}
             <div className="mb-6">
-              <h2 className="font-serif text-lg sm:text-2xl md:text-3xl font-bold capitalize text-planner-text mb-4 leading-tight tracking-wide">
+              <h2 className="font-script text-4xl sm:text-5xl font-normal capitalize text-planner-text mb-4 leading-tight">
                 {formattedDateHeader}
               </h2>
 
